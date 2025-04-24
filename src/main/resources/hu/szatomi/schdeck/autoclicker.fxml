@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0" prefWidth="310.0" style="-fx-background-color: #212121;" styleClass="round" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21.0.7" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.szatomi.schdeck.ClickerController">
+    <children>
+        <AnchorPane fx:id="header" prefHeight="60.0" prefWidth="310.0">
+            <children>
+                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Auto clicker" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                    <font>
+                        <Font name="Inter 18pt Bold" size="18.0" />
+                    </font>
+                </Text>
+                <Pane fx:id="closeButton" prefHeight="20.0" prefWidth="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                    <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0">
+                            <image>
+                                <Image url="@img/close.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+      <FlowPane prefHeight="330.0" prefWidth="310.0" vgap="10.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </padding>
+         <children>
+            <AnchorPane prefHeight="40.0" prefWidth="270.0">
+               <children>
+                  <FlowPane fx:id="leftButton" alignment="CENTER" columnHalignment="CENTER" onMousePressed="#leftButtonClicked" prefHeight="40.0" prefWidth="130.0" styleClass="round-small" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Left">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FlowPane>
+                  <FlowPane fx:id="rightButton" alignment="CENTER" columnHalignment="CENTER" layoutX="10.0" layoutY="10.0" onMousePressed="#rightButtonClicked" prefHeight="40.0" prefWidth="130.0" styleClass="round-small" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Right">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </FlowPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="40.0" prefWidth="270.0">
+               <children>
+                  <Text boundsType="VISUAL" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Clicking interval:" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="14.0">
+                     <font>
+                        <Font name="Inter 18pt Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="numberField" alignment="CENTER" prefWidth="100.0" styleClass="round-small" text="100" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font name="Inter 18pt ExtraBold" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Text boundsType="VISUAL" fill="WHITE" layoutX="9.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ms" textAlignment="CENTER" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="14.0">
+                     <font>
+                        <Font name="Inter 18pt Bold" size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="30.0" layoutY="60.0" prefHeight="40.0" prefWidth="270.0">
+               <children>
+                  <Text boundsType="VISUAL" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Hotkey:" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="14.0">
+                     <font>
+                        <Font name="Inter 18pt Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <FlowPane fx:id="hotkeyButton" alignment="CENTER" prefHeight="40.0" prefWidth="130.0" styleClass="round-small" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Text fx:id="hotkeyText" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="F6">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </FlowPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </FlowPane>
+    </children>
+</FlowPane>

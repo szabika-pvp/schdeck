@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0" prefWidth="310.0" style="-fx-background-color: #212121;" styleClass="round" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21.0.7" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.szatomi.schdeck.NotesController">
+    <children>
+        <AnchorPane fx:id="header" prefHeight="60.0" prefWidth="310.0">
+            <children>
+                <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Notes" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                    <font>
+                        <Font name="Inter 18pt ExtraBold" size="18.0" />
+                    </font>
+                </Text>
+                <Pane fx:id="closeButton" prefHeight="20.0" prefWidth="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+                    <children>
+                        <ImageView fitHeight="20.0" fitWidth="20.0">
+                            <image>
+                                <Image url="@img/close.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+      <AnchorPane prefHeight="330.0" prefWidth="310.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </padding>
+         <children>
+            <TextArea fx:id="textArea" prefHeight="200.0" prefWidth="200.0" promptText="Write your note here..." styleClass="text-area" wrapText="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextArea>
+         </children>
+      </AnchorPane>
+    </children>
+</FlowPane>

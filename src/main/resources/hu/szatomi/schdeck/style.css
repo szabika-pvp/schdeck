@@ -1,0 +1,110 @@
+@font-face { src: url('static/Inter_18pt-ExtraBold.ttf'); }
+
+* {
+    -fx-font-family: "Inter 18pt ExtraBold";
+    -fx-text-fill: white;
+}
+
+#header {
+
+    border-radius: 25 25 0 0;
+    -fx-border-radius: 25 25 0 0;
+    -fx-background-radius: 25 25 0 0;
+
+}
+
+#main {
+
+    border-radius: 0 0 25 25;
+    -fx-border-radius: 0 0 25 25;
+    -fx-background-radius: 0 0 25 25;
+
+}
+
+.round {
+
+    border-radius: 25;
+    -fx-border-radius: 25;
+    -fx-background-radius: 25;
+
+}
+
+.round-small {
+
+    border-radius: 15;
+    -fx-border-radius: 15;
+    -fx-background-radius: 15;
+    -fx-background-color: #2f2f2f;
+
+}
+
+.round-smaller {
+
+    border-radius: 7;
+    -fx-border-radius: 7;
+    -fx-background-radius: 7;
+
+}
+
+.round-left {
+
+    border-radius: 15 5 5 15;
+    -fx-border-radius: 15 5 5 15;
+    -fx-background-radius: 15 5 5 15;
+
+}
+
+.round-right {
+
+    border-radius: 5 15 15 5;
+    -fx-border-radius: 5 15 15 5;
+    -fx-background-radius: 5 15 15 5;
+
+}
+
+.progress-bar .track {
+    -fx-background-radius: 15;
+    -fx-background-color: #333;
+
+}
+
+.progress-bar .bar {
+
+    -fx-background-color: #fff;
+}
+
+.Button:hover {
+
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+
+}
+
+.choice-box {
+
+    -fx-control-inner-background: #2f2f2f;
+    -fx-font-size: 14px;
+}
+
+.text-area {
+    -fx-font-family: "Arial";
+    -fx-focus-color: #212121;
+    -fx-faint-focus-color: #212121;
+    -fx-border-color: #212121;
+    -fx-text-box-border: #212121;
+    -fx-padding: 0;
+}
+
+.text-area .content {
+    -fx-background-color: #212121;
+    -fx-padding: 0;
+    -fx-background-radius: 0;
+}
+
+.text-area .scroll-pane {
+    -fx-background-color: transparent;
+}
+
+.text-area .scroll-pane .corner {
+    -fx-background-color: transparent;
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="392.0" prefWidth="310.0" style="-fx-background-color: #212121;" styleClass="round" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21.0.7" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.szatomi.schdeck.SettingsController">
+   <children>
+      <AnchorPane fx:id="header" prefHeight="60.0" prefWidth="310.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Settings" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font name="Inter 18pt Bold" size="18.0" />
+               </font>
+            </Text>
+            <Pane fx:id="closeButton" prefHeight="20.0" prefWidth="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <children>
+                  <ImageView fitHeight="20.0" fitWidth="20.0">
+                     <image>
+                        <Image url="@img/close.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+      <FlowPane prefHeight="330.0" prefWidth="310.0" vgap="10.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" />
+         </padding>
+         <children>
+            <AnchorPane prefHeight="40.0" prefWidth="270.0">
+               <children>
+                  <Text boundsType="VISUAL" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Browser:" textAlignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="14.0">
+                     <font>
+                        <Font name="Inter 18pt Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <ChoiceBox fx:id="browsers" prefHeight="40.0" prefWidth="170.0" style="-fx-background-color: #2f2f2f;" stylesheets="@style.css" AnchorPane.rightAnchor="0.0">
+                     <styleClass>
+                        <String fx:value="round-small" />
+                        <String fx:value="choice-box" />
+                     </styleClass>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding></ChoiceBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </FlowPane>
+   </children>
+</FlowPane>
